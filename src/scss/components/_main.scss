@@ -1,0 +1,15 @@
+@import "./plotly";
+
+.snackBar {
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+}
+
+.btn-primary, .nav-item a.active {
+    color: white !important;
+}
+
+.btn:disabled {
+    background-color: rgb(182, 214, 237);
+}

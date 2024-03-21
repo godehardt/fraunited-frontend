@@ -1,0 +1,40 @@
+<!--Card-->
+<div class="card hoverable-card">
+  <!-- Card header -->
+  <div class="card-header text-center">
+    <div class="row">
+      <div class="col-sm-3 pt-1">Histogram</div>
+      <div class="col-sm-3 mb-0 pb-0 pt-0">
+        <select
+          class="form-control pb-0 pt-0"
+          id="propertySelectorHistogram"
+          onchange="requestHistogram()"
+        ></select>
+      </div>
+      <div class="col-sm-3 mb-0 pb-0 pt-0">
+        <select
+          class="form-control pb-0 pt-0"
+          id="binSelectorHistogram"
+          onchange="requestHistogram()"
+        ></select>
+      </div>
+      <div class="col-sm-3">
+        <div onclick="fullscreen('histogramchart_card')" class="float-right">
+          <i class="fas fa-expand mr-1 pt-2"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Card content-->
+  <div class="card-body">
+    <div class="histogramLoadingSpinner">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <canvas id="histchart"></canvas>
+  </div>
+</div>
+<!--/.Card-->

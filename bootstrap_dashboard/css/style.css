@@ -1,0 +1,297 @@
+#status-led {
+  float: right;
+  margin-left: 30px;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #acabac 0 -1px 9px,
+    #333333 0 2px 12px;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.form-control {
+  height: calc(1em + 0.75rem + 2px);
+}
+.col {
+  display: flex;
+  align-items: center;
+}
+
+.bottombutton {
+  float: none !important;
+  display: inline-block !important;
+  vertical-align: bottom !important;
+}
+
+/* Header text */
+.nav-link {
+  color: #ffffff;
+}
+
+/* Navigation bar */
+.mdb-color.lighten-5 {
+  background-color: #343a40 !important;
+  color: #ffffff;
+}
+
+/* Website background */
+.mdb-color.lighten-1 {
+  background: url(https://www.frankfurt-university.de/typo3temp/assets/images/_csm_moodle_bg__1__5614166411_3c0b8d2835.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: bottom center no-repeat scroll;
+}
+
+/* Big tab */
+.tabspace {
+  background-color: #ffffff80 !important;
+  /*background-color: rgb(238, 238, 238) !important;*/
+}
+
+.card-header {
+  background-color: #dddddd;
+  color: #000000;
+}
+
+.card {
+  background-color: #ffffff;
+  /*background-color: rgba(43, 137, 204, 0.8);*/
+  transition: all 0.75s;
+  -webkit-transition: all 0.75s;
+}
+
+footer.page-footer .footer-copyright {
+  color: #ffffff !important;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(50, 50, 50);
+}
+
+.nav-tabs .nav-link {
+  background-color: #ced4da;
+  border: 1px solid #00000066;
+  color: #000000;
+}
+
+.nav-link.active {
+  color: #ffffff !important;
+  background-color: #2b89cc !important;
+  border: 1px solid #000000;
+  border-color: #2b89cc #2b89cc #2b89cc;
+}
+
+.blue {
+  color: #ffffff !important;
+  background-color: #2b89cc !important;
+}
+
+table.table-hover-blue tbody tr:hover {
+  background-color: #2b89cc;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.table {
+  border-radius: 5px;
+}
+th:first-of-type {
+  border-top-left-radius: 5px;
+}
+th:last-of-type {
+  border-top-right-radius: 5px;
+}
+
+.btn-outline-primary {
+  color: #000000 !important;
+  background-color: #ced4da !important;
+  border: 2px solid rgba(0, 0, 0, 0.43) !important;
+}
+
+.btn-outline-primary.dropdown-toggle {
+  background-color: white !important;
+  border-color: #616161 !important;
+}
+
+.dropdown-item {
+  color: #ffffff;
+}
+
+.panel-actions {
+  margin-top: -20px;
+  margin-bottom: 0;
+  text-align: right;
+}
+.panel-actions a {
+  color: #333;
+}
+
+.fullscreen {
+  display: block;
+  z-index: 9999;
+  position: fixed;
+  width: 98%;
+  height: 100vh;
+  top: 5rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  margin: auto;
+}
+
+.js-plotly-plot {
+  height: 40vh;
+}
+
+.max {
+  height: 85vh !important;
+}
+
+.normal {
+  height: 40vh !important;
+}
+
+.fullscreen #fullscreen {
+  background-image: url(../images/ic_fullscreen_exit_grey_24dp.png);
+}
+.fullscreen #fullscreen:hover {
+  background-image: url(../images/ic_fullscreen_exit_white_24dp.png);
+}
+
+.hoverable-card:hover {
+  /* background-image: linear-gradient(120deg,#fdfbfb 0,#ebedee 100%); */
+  box-shadow: 0 0 50px rgba(10, 10, 10, 0.288);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.navbar-custom:hover {
+  box-shadow: 0 0 20px rgba(10, 10, 10, 0.288);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.renderjson a {
+  text-decoration: none;
+}
+.renderjson .disclosure {
+  color: #fd7e14;
+  font-size: 150%;
+}
+.renderjson .syntax {
+  color: grey;
+}
+.renderjson .string {
+  color: #fd7e14;
+}
+.renderjson .number {
+  color: #2b89cc;
+}
+.renderjson .boolean {
+  color: plum;
+}
+.renderjson .key {
+  color: rgb(0, 0, 0);
+}
+.renderjson .keyword {
+  color: lightgoldenrodyellow;
+}
+.renderjson .object.syntax {
+  color: rgb(8, 1, 100);
+}
+.renderjson .array.syntax {
+  color: lightsalmon;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+}
+
+.screenReaderText {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.hidden {
+  display: none;
+}
+
+.download-button {
+  color: #4285f4 !important;
+  background-color: transparent !important;
+  border-color: #4285f4 !important;
+}
+
+.download-button:hover {
+  color: #fd7e14 !important;
+  background-color: transparent !important;
+  border-color: #fd7e14 !important;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.info-plotly-chart:hover{
+  color: #fd7e14 !important;
+  background-color: transparent !important;
+  border-color: #fd7e14 !important;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.card-no-pad{
+  padding-top: 0;
+  padding-bottom: 0;
+}

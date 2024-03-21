@@ -1,0 +1,37 @@
+<!--Card-->
+<div class="card hoverable-card">
+  <div class="card-header text-center">
+    <!-- Card header -->
+    <div class="row">
+      <div class="col-sm-7 pt-1">Stacked Bar Chart</div>
+      <div class="col-sm-4 mb-0 pb-0 pt-0">
+        <select
+          class="form-control pb-0 pt-0"
+          id="propertySelectorHorizontalBar"
+          onchange='changeChartProperty("propertySelectorHorizontalBar", "horizontalBar")'
+        ></select>
+      </div>
+      <div class="col-sm-1">
+        <div
+          onclick="fullscreen('horizontalbarchart_card')"
+          class="float-right"
+        >
+          <i class="fas fa-expand mr-1 pt-2"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Card content-->
+  <div class="card-body">
+    <div class="commitLoadingSpinner">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <div id="horizontalBar"></div>
+  </div>
+</div>
+<!--/.Card-->

@@ -1,0 +1,70 @@
+{
+  "name": "robocup-ci-vis",
+  "homepage": "https://robocup/",
+  "version": "0.9.0",
+  "license": "MIT",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1",
+    "chart.js": "^4.4.0",
+    "chartjs-plugin-annotation": "^3.0.1",
+    "cross-env": "^7.0.3",
+    "plotly.js": "^2.27.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-plotly.js": "^2.6.0",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.69.5",
+    "timeago-react": "^3.0.6",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "startDev": "cross-env REACT_APP_MODE=development react-scripts start",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "standard": "standard",
+    "standard:fix": "standard --fix"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "pre-commit": "^1.2.2",
+    "standard": "^16.0.4"
+  },
+  "pre-commit": [
+    "standard"
+  ],
+  "standard": {
+    "ignore": [
+      "/bootstrap_dashboard",
+      "/src/components/form/protocol-creator.js"
+    ],
+    "env": {
+      "browser": true
+    },
+    "globals": [
+      "fetch"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

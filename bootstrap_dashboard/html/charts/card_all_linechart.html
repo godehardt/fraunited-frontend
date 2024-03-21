@@ -1,0 +1,24 @@
+<!--Card-->
+<div class="card hoverable-card">
+  <!-- Card header -->
+  <div class="card-header text-center">
+    Wins & Ties
+    <div class="float-left info-plotly-chart" data-toggle="tooltip" data-placement="right" title="Click a Datapoint in the Chart to jump to the Commit">
+      <i class="fas fa-info-circle"></i>
+    </div>
+    <div onclick="fullscreen('commitlinechart_card')" class="float-right">
+      <i class="fas fa-expand mr-1"></i>
+    </div>
+  </div>
+  <!--Card content-->
+  <div class="card-body">
+    <div class="commitLoadingSpinner">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <div id="commitLineChart"></div>
+  </div>
+</div>
